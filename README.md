@@ -25,7 +25,7 @@ docker run --name jovyan-studio --detach --publish 80:8888 --env GRANT_SUDO=yes 
 To get the token for log in in use `docker logs jovyan-studio` and it will show the output of the jupyter launch command that is used to start the notebook.
 
 ## Jupyter notebook config file
-Create a new jupyter configuration file and place it inside {the path you are mountin}/.jupyter/jupyter_notebook_config.py
+Create a new jupyter configuration file and place it inside {VOLUME_PATH}/.jupyter/jupyter_notebook_config.py
 For quick and **UNSECURE** access you can set `c.NotebookApp.token = ''`. Read more about [securing a notebook server](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#securing-a-notebook-server) on the official documentation.
 
 # Disclaimer
